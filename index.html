@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Water Meter</h1>
+    </header>
+    <div class="grid-container">
+        <div class="tank-level-container">
+            <h2>Tank Level Data:</h2>
+            <p id="tankLevelData"></p>
+        </div>
+        <div class="water-usage-container">
+            <h2>Daily Water Usage:</h2>
+            <p id="dailyWaterUsageData"></p>
+        </div>
+        <div class="alert-container">
+            <h2>Alerts:</h2>
+            <ul id="alertList" onclick="goToAlerts()"></ul>
+        </div>
+    </div>
+    <footer>
+      <p>&copy; 2024 Smart Water Meter</p>
+  </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
